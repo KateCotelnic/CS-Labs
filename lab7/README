@@ -1,0 +1,29 @@
+Output from console:
+
+Nov 24, 2020 7:40:15 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+Nov 24, 2020 7:40:15 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Cluster description not yet available. Waiting for 30000 ms before timing out
+Nov 24, 2020 7:40:15 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:1, serverValue:156}] to localhost:27017
+Nov 24, 2020 7:40:15 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 1]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7673800}
+Nov 24, 2020 7:40:15 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:2, serverValue:157}] to localhost:27017
+
+
+Data from database: 
+id | name | email | phone | 
+5fbd3c199436a75ec8c8b5e6 | Kate | wH/nFo0G60J0Skb9BHC8kQ | r/fYiBGA1cTC/BENIqe+mQ | 
+5fbd3c199436a75ec8c8b5e7 | Catalin | 9RIt904NcaKSdccZwzeW5Q | psFhjU67E2OWS9fW6Hv5Ow | 
+5fbd3c199436a75ec8c8b5e8 | Tom | zTyrBVY1+JzdQd3APPrL0Q | psWoaF7Kc1N5UifB9ljnFg | 
+5fbd3c199436a75ec8c8b5e9 | Jerry | Ib41e5aCCxwIMAG1CAQfXQ | w7wxaOWW5v0Pdxd2uyMwvQ | 
+
+
+
+Decrypted data from database: 
+id | name | email | phone | 
+5fbd3c199436a75ec8c8b5e6 | Kate | kate@gmail.com | +373568368 | 
+5fbd3c199436a75ec8c8b5e7 | Catalin | cat@gmail.com | +373569835 | 
+5fbd3c199436a75ec8c8b5e8 | Tom | tom@gmail.com | +373685343 | 
+5fbd3c199436a75ec8c8b5e9 | Jerry | jerry@gmail.com | +373683256 | 
